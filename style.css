@@ -46,9 +46,61 @@ li a {
     padding: 0 10px;
 }
 
-img {
+.cern-image {
     margin-left: 34%;
     margin-top: -200px;
     width: 300px;
     height: 250px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.images-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.amazon-image {
+    display: none;
+}
+
+.amazon-button {
+    border-style: none;
+    background-color: black;
+    color: rgb(208, 157, 2);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.tesla-image {
+    width: 150px;
+    height: 194px;
+    display: none;
+}
+
+.tesla-button {
+    border-style: none;
+    background-color: rgb(172, 2, 2);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.twitter-image {
+    height: 194px;
+    display: none;
+}
+
+.twitter-button {
+    border-style: none;
+    background-color: #00acee;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 1rem;
 }
