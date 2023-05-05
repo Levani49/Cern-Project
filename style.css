@@ -58,11 +58,6 @@ li a {
     justify-content: space-around;
 }
 
-.images-container div {
-    display: flex;
-    flex-direction: column;
-}
-
 .amazon-image {
     display: none;
 }
@@ -73,7 +68,7 @@ li a {
     color: rgb(208, 157, 2);
     border-radius: 20px;
     cursor: pointer;
-    padding: 1rem;
+    padding: 0.7rem;
 }
 
 .tesla-image {
@@ -88,7 +83,7 @@ li a {
     color: white;
     border-radius: 20px;
     cursor: pointer;
-    padding: 1rem;
+    padding: 0.9rem;
 }
 
 .twitter-image {
@@ -102,5 +97,5 @@ li a {
     color: white;
     border-radius: 20px;
     cursor: pointer;
-    padding: 1rem;
+    padding: 0.9rem;
 }
