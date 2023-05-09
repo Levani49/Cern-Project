@@ -59,7 +59,6 @@ li a {
 }
 
 .amazon-image {
-    display: none;
 }
 
 .amazon-button {
@@ -74,7 +73,6 @@ li a {
 .tesla-image {
     width: 150px;
     height: 194px;
-    display: none;
 }
 
 .tesla-button {
@@ -88,7 +86,6 @@ li a {
 
 .twitter-image {
     height: 194px;
-    display: none;
 }
 
 .twitter-button {

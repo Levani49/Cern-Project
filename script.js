@@ -5,7 +5,7 @@ const teslaButton = document.querySelector(".tesla-button");
 const twitterImage = document.querySelector(".twitter-image");
 const twitterButton = document.querySelector(".twitter-button");
 
-amazonButton.addEventListener("dblclick", () => {
+amazonButton.addEventListener("click", () => {
   if (amazonImage.style.display == "none") {
     amazonImage.style.display = "block";
     amazonButton.textContent = "Hide Amazon's image";
@@ -15,7 +15,7 @@ amazonButton.addEventListener("dblclick", () => {
   }
 });
 
-teslaButton.addEventListener("dblclick", () => {
+teslaButton.addEventListener("click", () => {
   if (teslaImage.style.display == "none") {
     teslaImage.style.display = "block";
     teslaButton.textContent = "Hide Tesla's image";
@@ -25,7 +25,7 @@ teslaButton.addEventListener("dblclick", () => {
   }
 });
 
-twitterButton.addEventListener("dblclick", () => {
+twitterButton.addEventListener("click", () => {
   if (twitterImage.style.display == "none") {
     twitterImage.style.display = "block";
     twitterButton.textContent = "Hide Twitter's image";
