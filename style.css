@@ -65,7 +65,7 @@ li a {
     border-style: none;
     background-color: black;
     color: rgb(208, 157, 2);
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
     padding: 0.7rem;
 }
@@ -79,7 +79,7 @@ li a {
     border-style: none;
     background-color: rgb(172, 2, 2);
     color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
     padding: 0.9rem;
 }
@@ -92,7 +92,16 @@ li a {
     border-style: none;
     background-color: #00acee;
     color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
     padding: 0.9rem;
+}
+
+.cern-button {
+    border-style: none;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
 }
