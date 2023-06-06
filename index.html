@@ -1,39 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project-01</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <form action="/action_page.php">
-      <div class="container">
-        <h1>Sign Up</h1>
-  
-        <label for="name"><b>Name</b></label>
-        <input type="text" name="name" id="name" required>
-    
-        <label for="email"><b>Email</b></label>
-        <input type="text" name="email" id="email" required>
-    
-        <label for="psw"><b>Password</b></label>
-        <input type="password" name="psw" id="psw" required>
-    
-        <label for="psw-repeat"><b>Confirm Password</b></label>
-        <input type="password" name="psw-repeat" id="psw-repeat" required>
-    
-        <button type="submit" class="registerbtn">Sign up</button>
-      </div>
-    
-    </form>
-  
-
-    <script src="script.js"></script>
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -44,33 +8,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="/action_page.php">
-      <div class="container">
-        <h1>Sign Up</h1>
-
-        <div class="form-group">
-          <label for="name"><b>Name:</b></label>
-          <input type="text" name="name" id="name" required>
-        </div>
-
-        <div class="form-group">
-          <label for="email"><b>Email:</b></label>
-          <input type="text" name="email" id="email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="psw"><b>Password:</b></label>
-          <input type="password" name="psw" id="psw" required>
-        </div>
-
-        <div class="form-group">
-          <label for="psw-repeat"><b>Confirm Password:</b></label>
-          <input type="password" name="psw-repeat" id="psw-repeat" required>
-        </div>
-
-        <button type="submit" class="registerbtn">Sign up</button>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Mission</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">SEO</a></li>
+            <li><a href="#">Social Media</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="mode-toggle">
+        <input type="checkbox" id="mode-switch">
+        <label for="mode-switch" class="mode-switch-label">
+          <span class="mode-switch-icon">Mode</span>
+        </label>
       </div>
-    </form>
+    </nav>
 
     <script src="script.js"></script>
   </body>
