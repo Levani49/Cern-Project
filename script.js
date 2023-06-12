@@ -1,13 +1,27 @@
-const modeSwitch = document.getElementById("mode-switch");
-const nav = document.querySelector("nav");
-const body = document.querySelector("body");
+function add() {
+  const num1 = parseFloat(document.getElementById("number1").value);
+  const num2 = parseFloat(document.getElementById("number2").value);
+  const result = num1 + num2;
+  document.getElementById("result").textContent = result;
+}
 
-modeSwitch.addEventListener("change", function () {
-  if (this.checked) {
-    nav.classList.add("dark-mode");
-    body.classList.add("dark-mode");
-  } else {
-    nav.classList.remove("dark-mode");
-    body.classList.remove("dark-mode");
-  }
-});
+function subtract() {
+  const num1 = parseFloat(document.getElementById("number1").value);
+  const num2 = parseFloat(document.getElementById("number2").value);
+  const result = num1 - num2;
+  document.getElementById("result").textContent = result;
+}
+
+function multiply() {
+  const num1 = parseFloat(document.getElementById("number1").value);
+  const num2 = parseFloat(document.getElementById("number2").value);
+  const result = num1 * num2;
+  document.getElementById("result").textContent = result;
+}
+
+function divide() {
+  const num1 = parseFloat(document.getElementById("number1").value);
+  const num2 = parseFloat(document.getElementById("number2").value);
+  const result = num1 / num2;
+  document.getElementById("result").textContent = result;
+}
