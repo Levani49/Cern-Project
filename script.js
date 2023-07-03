@@ -1,27 +1,39 @@
-function add() {
-  const num1 = parseFloat(document.getElementById("number1").value);
-  const num2 = parseFloat(document.getElementById("number2").value);
-  const result = num1 + num2;
-  document.getElementById("result").textContent = result;
+function reverseSentence() {
+  const text = document.getElementById("text-input").value;
+  const reversed = text.split(" ").reverse().join(" ");
+  document.getElementById("result").textContent = reversed;
 }
 
-function subtract() {
-  const num1 = parseFloat(document.getElementById("number1").value);
-  const num2 = parseFloat(document.getElementById("number2").value);
-  const result = num1 - num2;
-  document.getElementById("result").textContent = result;
+function reverseWords() {
+  const text = document.getElementById("text-input").value;
+  const reversed = text
+    .split(" ")
+    .map((word) => reverseString(word))
+    .join(" ");
+  document.getElementById("result").textContent = reversed;
 }
 
-function multiply() {
-  const num1 = parseFloat(document.getElementById("number1").value);
-  const num2 = parseFloat(document.getElementById("number2").value);
-  const result = num1 * num2;
-  document.getElementById("result").textContent = result;
+function removeVowels() {
+  const text = document.getElementById("text-input").value;
+  const removed = text.replace(/[aeiou]/gi, "");
+  document.getElementById("result").textContent = removed;
 }
 
-function divide() {
-  const num1 = parseFloat(document.getElementById("number1").value);
-  const num2 = parseFloat(document.getElementById("number2").value);
-  const result = num1 / num2;
-  document.getElementById("result").textContent = result;
+function changeCase() {
+  const text = document.getElementById("text-input").value;
+  const changed = text
+    .split("")
+    .map((char) => {
+      if (char === char.toUpperCase()) {
+        return char.toLowerCase();
+      } else {
+        return char.toUpperCase();
+      }
+    })
+    .join("");
+  document.getElementById("result").textContent = changed;
+}
+
+function reverseString(str) {
+  return str.split("").reverse().join("");
 }
