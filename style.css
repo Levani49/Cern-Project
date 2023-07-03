@@ -34,8 +34,8 @@ body {
 .operators button {
   background-color: aqua;
   border-style: none;
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  height: 70px;
 }
 
 .operators button:hover {
