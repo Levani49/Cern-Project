@@ -8,38 +8,8 @@
 body {
   padding: 0;
   margin: 0;
-}
-
-.box-container {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-.input-field {
-  margin-right: 10px;
-}
-
-.result {
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-.operators {
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-.operators button {
-  background-color: aqua;
-  border-style: none;
-  width: 70px;
-  height: 70px;
-}
-
-.operators button:hover {
-  background-color: blue;
-  cursor: pointer;
-  color: white;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 17%;
 }
