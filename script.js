@@ -1,39 +1,29 @@
-function reverseSentence() {
-  const text = document.getElementById("text-input").value;
-  const reversed = text.split(" ").reverse().join(" ");
-  document.getElementById("result").textContent = reversed;
+function displayClock() {
+  var now = new Date();
+
+  // Format and display the date
+  var dateElement = document.getElementById("date");
+  var date = now.getDate();
+  var month = now.getMonth() + 1;
+  var year = now.getFullYear();
+  dateElement.textContent =
+    formatDate(date) + "/" + formatDate(month) + "/" + year;
+
+  // Format and display the time
+  var clockElement = document.getElementById("clock");
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  var seconds = now.getSeconds();
+  clockElement.textContent =
+    formatTime(hours) + ":" + formatTime(minutes) + ":" + formatTime(seconds);
 }
 
-function reverseWords() {
-  const text = document.getElementById("text-input").value;
-  const reversed = text
-    .split(" ")
-    .map((word) => reverseString(word))
-    .join(" ");
-  document.getElementById("result").textContent = reversed;
+function formatTime(time) {
+  return time < 10 ? "0" + time : time;
 }
 
-function removeVowels() {
-  const text = document.getElementById("text-input").value;
-  const removed = text.replace(/[aeiou]/gi, "");
-  document.getElementById("result").textContent = removed;
+function formatDate(date) {
+  return date < 10 ? "0" + date : date;
 }
 
-function changeCase() {
-  const text = document.getElementById("text-input").value;
-  const changed = text
-    .split("")
-    .map((char) => {
-      if (char === char.toUpperCase()) {
-        return char.toLowerCase();
-      } else {
-        return char.toUpperCase();
-      }
-    })
-    .join("");
-  document.getElementById("result").textContent = changed;
-}
-
-function reverseString(str) {
-  return str.split("").reverse().join("");
-}
+setInterval(displayClock, 1000);
