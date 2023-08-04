@@ -77,7 +77,7 @@ function deleteCube() {
 
 function sortCubes() {
   cubes.sort(function (a, b) {
-    return a.id - b.id;
+    return a.size - b.size;
   });
   renderCubes();
 }
